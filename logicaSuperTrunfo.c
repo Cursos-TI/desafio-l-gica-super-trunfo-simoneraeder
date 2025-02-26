@@ -117,7 +117,8 @@ int main() {
 
     printf("O código da sua carta:%d\n\t", codigo);
 
-printf("Vamos para as Comparações das Cidades: \n Qual delas ganham?  Bahia ou Brasília "\n);
+printf("Vamos para as comparações das cidades: Bahia X Brasília \n" );
+
     
     if (populacao > populacao_2) {
            printf("Cidade 1 tem maior população.\n");
@@ -125,6 +126,13 @@ printf("Vamos para as Comparações das Cidades: \n Qual delas ganham?  Bahia ou
              printf("Cidade 2 tem maior população.\n");
          }
    
+           
+    if (area > area_2) {
+        printf("Cidade 1 tem maior área km².\n");
+      } else {
+          printf("Cidade 2 tem maior área km².\n");
+      }
+
         
     return 0;
 
