@@ -52,7 +52,7 @@ int super_poder_da_carta =  13000;
     char estado_2[50] = "Distrito Federal" ;
     char cidade_2[30] = "Brasília";
     unsigned long int populacao_2 = 132000 ;
-    int pontos_turisticos_2 = 20 ;
+    int pontos_turisticos_2 = 10 ;
     float area_2 = 530.0; 
     float pib_2 = 45.0 ;
     float pib_per_capita_2 = 0.3409;
@@ -97,10 +97,10 @@ printf("Vamos para as comparações das cidades: Bahia X Brasília \n" );
              printf("Cidade 2 tem maior população.\n");
          }
    
-         if (pontos_turisticos == pontos_turisticos_2) {
-            printf("Cidade 1 é igual a Cidade 2 de Pontos Turísticos.\n");
+         if (pontos_turisticos > pontos_turisticos_2) {
+            printf("Cidade 1 tem mais Pontos Turísticos.\n");
           } else {
-           printf("Cidade 2 é diferente da Cidade 1 de Pontos Turísticos.\n");
+           printf("Cidade 2 tem mais Pontos Turísticos.\n");
           }
                
     if (area > area_2) {
@@ -134,7 +134,7 @@ printf("Vamos para as comparações das cidades: Bahia X Brasília \n" );
           printf("Cidade 2 tem o maior número do Super Poder da Carta.\n");
       }
       
-printf("*** Deu empate no Super Trunfo :o ***\n");
+printf("*** A Cidade 1 Ganhou no Super Trunfo :o ***\n");
 
        // interação com o usuário
 
