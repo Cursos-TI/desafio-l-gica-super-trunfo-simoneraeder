@@ -54,7 +54,7 @@ char pais_2[50] = "Brasil" ;
 char estado_2[50] = "Distrito Federal" ;
 char cidade_2[30] = "Brasília";
 unsigned long int populacao_2 = 132000 ;
-int pontos_turisticos_2 = 10 ;
+int pontos_turisticos_2 = 20 ;
 float area_2 = 530.0; 
 float pib_2 = 45.0 ;
 float pib_per_capita_2 = 0.3409;
@@ -130,107 +130,86 @@ break;
     
  }
 
-//
-
-int EscolhadoJogador, EscolhaComputador;
-int Cidade;
- srand(time(0));
-
- printf("Pronto para jogar? Vamos começar...\n");
- printf("1. Escolha qual a cidade você quer jogar.\n");
- printf("Escolha uma opção: \n");
- scanf("%d", &EscolhadoJogador);
+//Comparação com atributos, de estrutudas com decisão aninhadas
 
 
-EscolhaComputador = rand() % 2 + 1;
 
-switch (EscolhadoJogador)
-{
-case 1: printf("Cidade 1 Salvador - Cidade 2 Brasília\n");
-scanf("%d", &Cidade);
+printf("O Ponto Turístico, qual que vence? Cidade 1 ou Cidade 2?\n");
 
- switch (Cidade)
-
-    {
-    case 1:   printf("Jogador: Salvador foi a escolhida por você\n");
-    break;
-    case 2:   printf("Jogador: Brasília foi a escolhida por você\n");
-    break;
-    
-    default:
-      break;
-    }
-
+if (pontos_turisticos > pontos_turisticos_2) {
+  printf("A Cidade 1 venceu!!!!\n");
+}
+else if (pontos_turisticos< pontos_turisticos_2){
+  printf("A Cidade 2 venceu!!!\n");
+}
+else{
+  printf("Houve um empate!!\n");
 }
 
+printf("Na área km², qual que vence? Cidade 1 ou Cidade 2?\n");
 
-switch (EscolhaComputador)
-{
-case 1: printf("Cidade 1 Salvador - Cidade 2 Brasília\n");
-scanf("%d", &Cidade);
-
- switch (Cidade)
-
-    {
-    case 1:   printf("Computador: Salvador foi a escolhida por você\n");
-    break;
-    case 2:   printf("Computador: Brasília foi a escolhida por você\n");
-    break;
-    
-    default:
-      break;
-    }
-
+if (area > area_2) {
+  printf("A Cidade 1 venceu!!!!\n");
+}
+else if (area < area_2){
+  printf("A Cidade 2 venceu!!!\n");
+}
+else{
+  printf("Houve um empate!!\n");
 }
 
-printf("Escolha um atributo da cidade \n");
-printf("1. Ponto Turístico.\n");
-printf("2.População");
-printf("3.Área km²");
-printf("Escolha uma opção: \n");
-scanf("%d", &EscolhadoJogador);
+printf("Na população, qual que vence? Cidade 1 ou Cidade 2?\n");
 
-switch (EscolhadoJogador)
-{
-case 1:
-  printf("Jogador: Ponto Turístico -\n ");
-  break;
-  case 2:
-  printf("Jogador: População -\n ");
-  break;
-  case 3:
-  printf("Jogador:Área km² -\n ");
-  break;
-default:
-printf("Opção inválida!\n");
-  break;
+if (populacao > populacao_2) {
+  printf("A Cidade 1 venceu!!!!\n");
+}
+else if (populacao < populacao_2){
+  printf("A Cidade 2 venceu!!!\n");
+}
+else{
+  printf("Houve um empate!!\n");
 }
 
-switch (EscolhaComputador)
-{
-case 1:
-  printf("Computador: Ponto Turístico -\n ");
-  break;
-  case 2:
-  printf("Computador: População -\n ");
-  break;
-  case 3:
-  printf("Computador:Área km² - \n");
-  break;
+printf("No PIB Per Capita, qual que vence? Cidade 1 ou Cidade 2?\n");
+
+if (pib_per_capita > pib_per_capita_2) {
+  printf("A Cidade 1 venceu!!!!\n");
+}
+else if (pib_per_capita < pib_per_capita_2){
+  printf("A Cidade 2 venceu!!!\n");
+}
+else{
+  printf("Houve um empate!!\n");
 }
 
-if(EscolhadoJogador == EscolhaComputador)
-{
-  printf("O jogo empatou!!!!\n");
+printf("Na Densidade Popuacional, qual que vence? Cidade 1 ou Cidade 2?\n");
 
-}  else if ((EscolhadoJogador == 1) && ( EscolhaComputador==3) ||
-(EscolhadoJogador == 2) && (EscolhaComputador==1) ) ||
- (EscolhadoJogador == 3 ) && (EscolhaComputador == 2) 
+if (densidade_populacional > densidade_populacional_2) {
+  printf("A Cidade 1 venceu!!!!\n");
+}
+else if (densidade_populacional < densidade_populacional_2){
+  printf("A Cidade 2 venceu!!!\n");
+}
+else{
+  printf("Houve um empate!!\n");
+}
 
-  printf("Parabéns você ganhou!!!!!\n");
-  else {
-    printf("Você perdeu!!!\n");
+printf("Parabéns a Cidade 1 Venceu!!!!!\n");
+
+printf("Nas ambas cidades, temos mais ou menos de 50 lugares para visitar?\n");
+
+if ( pontos_turisticos > 50 && pontos_turisticos_2 > 50)
+{printf("Ambos os pontos turísticos tem mais que 50 lugares para visitar\n");  
+}
+  else if (pontos_turisticos <  50 && pontos_turisticos_2 < 50) {
+    printf(" Ambos os pontos turísticos tem menos que 50 lugares para visitar\n");
   }
+  else {
+    printf("são diferentes \n");
+  }
+
+
+
 
 
 return 0;
