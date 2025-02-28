@@ -88,7 +88,7 @@ int super_poder_da_carta =  13000;
 
   // usando o if e o else suas comparações
 
-printf("Vamos para as comparações das cidades: Bahia X Brasília \n" );
+printf("Vamos para as comparações das cidades: Salvador X Brasília \n" );
 
     
     if (populacao > populacao_2) {
