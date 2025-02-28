@@ -87,11 +87,10 @@ printf("Código = %s\n", codigo_2);
 
 printf("Super Poder da Carta 2 = %d \n", super_poder_da_carta_2);
 
+// Menu interativo 
 
 int opcao;
-int cidades;
 int regras;
-
 
   printf("Menu Principal\n");
   printf("1. Iniciar Jogo\n");
@@ -103,32 +102,20 @@ int regras;
  
   switch (opcao) {
     case 1:
-      printf("Escolha qual das cidades você quer jogar: 1 Salvador 2 Brasília \n");
-      scanf("%d", &cidades);
-      switch (cidades)
-      {
-      case 1: printf("Salvador");
+      printf("Iniciando...... \n");
       break;
-
-      case 2: printf("Brasília");
-      break;
-      
-      default:
-        break;
-      }
-      break;
-
+    
       case 2:
-      printf("Seguem as Explicações das regras:\n");
+      printf("Seguem as regras:\n");
       printf("Digite a opção da regra do jogo que deseja: 1 ou 2. \n");
       scanf("%d", &regras);
 
       switch (regras)
       {
-      case 1: printf("Regra 1: Tenha bastante concentração\n");
+      case 1: printf("Regra 1: Chame os amigos!\n");
       break;
 
-      case 2: printf("Regra 2: Divirta-se\n");
+      case 2: printf("Regra 2: Divirta-se!\n");
       
       default:
        break;
@@ -143,8 +130,107 @@ break;
     
  }
 
+//
+
+int EscolhadoJogador, EscolhaComputador;
+int Cidade;
+ srand(time(0));
+
+ printf("Pronto para jogar? Vamos começar...\n");
+ printf("1. Escolha qual a cidade você quer jogar.\n");
+ printf("Escolha uma opção: \n");
+ scanf("%d", &EscolhadoJogador);
 
 
+EscolhaComputador = rand() % 2 + 1;
+
+switch (EscolhadoJogador)
+{
+case 1: printf("Cidade 1 Salvador - Cidade 2 Brasília\n");
+scanf("%d", &Cidade);
+
+ switch (Cidade)
+
+    {
+    case 1:   printf("Jogador: Salvador foi a escolhida por você\n");
+    break;
+    case 2:   printf("Jogador: Brasília foi a escolhida por você\n");
+    break;
+    
+    default:
+      break;
+    }
+
+}
+
+
+switch (EscolhaComputador)
+{
+case 1: printf("Cidade 1 Salvador - Cidade 2 Brasília\n");
+scanf("%d", &Cidade);
+
+ switch (Cidade)
+
+    {
+    case 1:   printf("Computador: Salvador foi a escolhida por você\n");
+    break;
+    case 2:   printf("Computador: Brasília foi a escolhida por você\n");
+    break;
+    
+    default:
+      break;
+    }
+
+}
+
+printf("Escolha um atributo da cidade \n");
+printf("1. Ponto Turístico.\n");
+printf("2.População");
+printf("3.Área km²");
+printf("Escolha uma opção: \n");
+scanf("%d", &EscolhadoJogador);
+
+switch (EscolhadoJogador)
+{
+case 1:
+  printf("Jogador: Ponto Turístico -\n ");
+  break;
+  case 2:
+  printf("Jogador: População -\n ");
+  break;
+  case 3:
+  printf("Jogador:Área km² -\n ");
+  break;
+default:
+printf("Opção inválida!\n");
+  break;
+}
+
+switch (EscolhaComputador)
+{
+case 1:
+  printf("Computador: Ponto Turístico -\n ");
+  break;
+  case 2:
+  printf("Computador: População -\n ");
+  break;
+  case 3:
+  printf("Computador:Área km² - \n");
+  break;
+}
+
+if(EscolhadoJogador == EscolhaComputador)
+{
+  printf("O jogo empatou!!!!\n");
+
+}  else if ((EscolhadoJogador == 1) && ( EscolhaComputador==3) ||
+(EscolhadoJogador == 2) && (EscolhaComputador==1) ) ||
+ (EscolhadoJogador == 3 ) && (EscolhaComputador == 2) 
+
+  printf("Parabéns você ganhou!!!!!\n");
+  else {
+    printf("Você perdeu!!!\n");
+  }
 
 
 return 0;
