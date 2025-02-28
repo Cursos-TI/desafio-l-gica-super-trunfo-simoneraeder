@@ -89,11 +89,13 @@ printf("Super Poder da Carta 2 = %d \n", super_poder_da_carta_2);
 
 
 int opcao;
+int cidades;
 int regras;
+
 
   printf("Menu Principal\n");
   printf("1. Iniciar Jogo\n");
-  printf("2. Ver Regras\n");
+  printf("2. Regras do Jogo\n");
   printf("3. Sair\n");
   printf("Escolha uma opção: \n");
   scanf("%d", &opcao);
@@ -101,36 +103,45 @@ int regras;
  
   switch (opcao) {
     case 1:
-      printf("Iniciando o jogo...\n");
+      printf("Escolha qual das cidades você quer jogar: 1 Salvador 2 Brasília \n");
+      scanf("%d", &cidades);
+      switch (cidades)
+      {
+      case 1: printf("Salvador");
+      break;
+
+      case 2: printf("Brasília");
+      break;
+      
+      default:
+        break;
+      }
       break;
 
       case 2:
-      printf("Seguem as Explicações das regras\n");
+      printf("Seguem as Explicações das regras:\n");
       printf("Digite a opção da regra do jogo que deseja: 1 ou 2. \n");
       scanf("%d", &regras);
 
-
-
-      switch (regras) {
-      case 1:
-      printf("Regra 1\n");
+      switch (regras)
+      {
+      case 1: printf("Regra 1: Tenha bastante concentração\n");
       break;
 
-      case 2:
-      printf("Regra 2\n");
-      break;}
+      case 2: printf("Regra 2: Divirta-se\n");
+      
+      default:
+       break;
+}
+break;
 
-default:    
-   
+case 3:
+printf("Você saiu do jogo.\n");
+
+default:
+break;
     
-
-      case 3:
-      printf("Você saiu do Jogo\n");
-      break;
-
-
-
-      }
+ }
 
 
 
