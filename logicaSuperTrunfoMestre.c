@@ -14,10 +14,10 @@ int pontoTuristico1, pontoTuristico2, densidadePopulacional1, densidadePopulacio
 
 srand(time(0));
 
-pontoTuristico1 = 10;
+pontoTuristico1 = 30;
 pontoTuristico2 = 20;
-densidadePopulacional1 = 94;
-densidadePopulacional2 = 32;
+densidadePopulacional1 = 30;
+densidadePopulacional2 = 20;
 area1 = 79;
 area2 = 53;
 
@@ -32,7 +32,10 @@ printf("A. Área\n");
 printf("Escolha a comparação: \n");
 scanf("%c", &primeiroAtributo);
 
-
+if (primeiroAtributo == segundoAtributo)
+{
+    printf("Você escolheu o mesmo atributo");
+} else {
 
 switch (primeiroAtributo)
 {
@@ -60,22 +63,19 @@ printf("Opção inválida!\n");
     break;
 }
 
-printf("Escolha o segundo atributo\n");
-printf("Atenção: Você deve escolher um atributo diferente ao primeiro\n");
+printf("Escolha o segundo atributo.\n");
+printf("Atenção: Você deve escolher um atributo diferente ao primeiro.\n");
 printf("P. Ponto turístico \n");
 printf("D. Densidade Populacional \n");
 printf("A. Área\n");
 
 printf("Escolha a comparação: \n");
 scanf("%c", &segundoAtributo);
+scanf("%c", &segundoAtributo);
 
 
 
 
-if (primeiroAtributo == segundoAtributo)
-{
-    printf("Você escolheu o mesmo atributo");
-} else {
     switch (segundoAtributo)
     {
     case 'P':
@@ -107,33 +107,14 @@ if (primeiroAtributo == segundoAtributo)
 
 if (resultado1 && resultado2)
 {
-printf("Parabéns, você venceu\n");
+printf("Parabéns, você venceu!!!!!!\n");
 
 } else if (resultado1 != resultado2)
 {
     printf("Empatou!!!!\n");
 }else {
-    printf("Infelizmente você perdeu!!!!\n");
+    printf("Infelizmente, você perdeu!!!!\n");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     return 0;
