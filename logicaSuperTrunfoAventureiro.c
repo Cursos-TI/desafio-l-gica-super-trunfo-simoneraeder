@@ -126,6 +126,8 @@ case 3:
 printf("Você saiu do jogo.\n");
 
 default:
+printf("Opção inválida!\n");
+
 break;
     
  }
