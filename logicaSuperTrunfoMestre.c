@@ -34,21 +34,22 @@ scanf("%c", &primeiroAtributo);
 
 switch (primeiroAtributo)
 {
-case 'P' ;
-     'p' ;
-     printf("Você escolheu a opção Ponto Turístico"\n);
+case 'P' :
+case 'p' :
+
+     printf("Você escolheu a opção Ponto Turístico \n");
      resultado1 = pontoTuristico1 > pontoTuristico2 ? 1 : 0 ;
     break;
 
-    case 'D';
-     'd';
-     printf("Você escolheu a opção Densidade Populacional"\n);
+    case 'D':
+    case'd':
+     printf("Você escolheu a opção Densidade Populacional \n");
      resultado1 = densidadePopulacional1 > densidadePopulacional2 ? 1 : 0 ;
      break;
 
-     case 'A';
-     'a';
-     printf("Você escolheu a opção Área"\n);
+     case 'A':
+     case 'a':
+     printf("Você escolheu a opção Área \n");
      resultado1 = area1 > area2 ? 1 : 0 ;
      break;
 
@@ -72,21 +73,21 @@ if (primeiroAtributo == segundoAtributo)
 } else {
     switch (segundoAtributo)
 {
-case 'P';
-     'p';
-     printf("Você escolheu a opção Ponto Turístico"\n);
+case 'P':
+ case 'p':
+     printf("Você escolheu a opção Ponto Turístico \n");
      resultado2 = pontoTuristico1 > pontoTuristico2 ? 1 : 0 ;
     break;
 
-    case 'D';
-     'd';
-     printf("Você escolheu a opção Densidade Populacional"\n);
+   case 'D':
+   case 'd':
+     printf("Você escolheu a opção Densidade Populacional \n");
      resultado2 = densidadePopulacional1 > densidadePopulacional2 ? 1 : 0 ;
      break;
 
-     case 'A';
-     'a';
-     printf("Você escolheu a opção Área"\n);
+    case 'A':
+    case'a':
+     printf("Você escolheu a opção Área \n");
      resultado2 = area1 > area2 ? 1 : 0 ;
      break;
 
