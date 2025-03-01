@@ -32,6 +32,8 @@ printf("A. Área\n");
 printf("Escolha a comparação: \n");
 scanf("%c", &primeiroAtributo);
 
+
+
 switch (primeiroAtributo)
 {
 case 'P' :
@@ -63,8 +65,11 @@ printf("Atenção: Você deve escolher um atributo diferente ao primeiro\n");
 printf("P. Ponto turístico \n");
 printf("D. Densidade Populacional \n");
 printf("A. Área\n");
+
 printf("Escolha a comparação: \n");
 scanf("%c", &segundoAtributo);
+
+
 
 
 if (primeiroAtributo == segundoAtributo)
@@ -72,15 +77,16 @@ if (primeiroAtributo == segundoAtributo)
     printf("Você escolheu o mesmo atributo");
 } else {
     switch (segundoAtributo)
-{
-case 'P':
- case 'p':
-     printf("Você escolheu a opção Ponto Turístico \n");
-     resultado2 = pontoTuristico1 > pontoTuristico2 ? 1 : 0 ;
+    {
+    case 'P':
+    case 'p':
+
+    printf("Você escolheu a opção Ponto Turístico \n");
+    resultado2 = pontoTuristico1 > pontoTuristico2 ? 1 : 0 ;
     break;
 
-   case 'D':
-   case 'd':
+    case 'D':
+    case 'd':
      printf("Você escolheu a opção Densidade Populacional \n");
      resultado2 = densidadePopulacional1 > densidadePopulacional2 ? 1 : 0 ;
      break;
@@ -91,11 +97,13 @@ case 'P':
      resultado2 = area1 > area2 ? 1 : 0 ;
      break;
 
-default:
-printf("Opção inválida!\n");
-    break;
+    default:
+    printf("Opção inválida!\n");
+        break;
+    }
 }
-}
+    
+// Comparação com operadores, para ver quem venceu, perdeu e empatou.
 
 if (resultado1 && resultado2)
 {
