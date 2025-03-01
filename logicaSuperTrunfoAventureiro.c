@@ -133,7 +133,7 @@ break;
 //Comparação com atributos, de estrutudas com decisão aninhadas
 
 
-
+printf("Vamos comparar os valores dos atributos de cada Cidade:\n");
 printf("O Ponto Turístico, qual que vence? Cidade 1 ou Cidade 2?\n");
 
 if (pontos_turisticos > pontos_turisticos_2) {
@@ -195,6 +195,8 @@ else{
 }
 
 printf("Parabéns a Cidade 1 Venceu!!!!!\n");
+
+// Comparação de atributo, usando operador lógico.
 
 printf("Nas ambas cidades, temos mais ou menos de 50 lugares para visitar?\n");
 
